@@ -1,16 +1,17 @@
-#!/usr/bin/env python3
-""" Introducing the caching system """
+#!/usr/bin/python3
+"""  Basic dictionary """
 
 
 class BasicCache(BaseCaching):
+    """ Class that inherits from the BaseCaching """
+
     def put(self, key, item):
         """ Assign to the dictionary """
-        if key or item is None:
-            return None
-        self.cache_data[key] = item
+        if key and item:
+            self.cache_data[key] = item
 
     def get(self, key):
-        """ Return the value from put """
-        if key or self.cache_data(key) is None:
+        """ Return the value linked """
+        if key is None or self.cache_data.get(key) is None:
             return None
         return self.cache_data.get(key)
