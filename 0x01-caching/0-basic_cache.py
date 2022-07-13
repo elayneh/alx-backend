@@ -4,8 +4,8 @@ from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """ Class that inherits from BaseCaching and is a caching system """    
-    
+    """ Class that inherits from BaseCaching and is a caching system """
+
     def put(self, key, item):
         """ Assign to the dictionary """
         if key and item:
@@ -16,4 +16,3 @@ class BasicCache(BaseCaching):
         if key is None or self.cache_data.get(key) is None:
             return None
         return self.cache_data.get(key)
-    
