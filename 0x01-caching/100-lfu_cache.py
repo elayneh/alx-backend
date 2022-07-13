@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ LFU Caching """
 from base_caching import BaseCaching
 from collections import OrderedDict
@@ -6,7 +6,6 @@ from collections import OrderedDict
 
 class LFUCache(BaseCaching):
     """ Class that inherits from BaseCaching and is a caching system """
-
     def __init__(self):
         super().__init__()
         self.lru_cache = OrderedDict()
