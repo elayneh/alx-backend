@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """  Basic dictionary """
+from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
@@ -11,7 +12,7 @@ class BasicCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
-        """ Return the value linked """
-        if key is None or self.cache_data.get(key) is None:
+        """ Return linked value """
+        if key or self.cache_data.get[key] is None:
             return None
-        return self.cache_data.get(key)
+        return self.cache_data.get[key]
