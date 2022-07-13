@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 """ FIFO cache management policy in python """
-from functools import cache
-from unittest.mock import Base
-
-from attr import dataclass
 from base_caching import BaseCaching
 
 
