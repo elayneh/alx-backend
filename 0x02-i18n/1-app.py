@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """ intstantiation Babel """
-from email.policy import strict
 from flask import Flask, render_template
 from flask_babel import Babel
 
