@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """ Flask app """
 
-from math import remainder
 from flask import Flask, render_template
 
 app = Flask(__name__)
