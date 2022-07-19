@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """ intstantiation Babel """
+from email.policy import strict
 from flask import Flask, render_template
 from flask_babel import Babel
 
@@ -16,7 +17,7 @@ app.config.from_object(Config)
 b = Babel(app)
 
 
-@app.route('/')
+@app.route('/', strict_slashes=False)
 def index():
     """ Returns the html content """
     return render_template('1-index.html')
